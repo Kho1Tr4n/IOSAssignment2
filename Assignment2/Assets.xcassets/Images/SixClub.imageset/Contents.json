@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "300px-Playing_card_club_6.svg.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "300px-Playing_card_club_6.svg@2x.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "300px-Playing_card_club_6.svg@3x.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
