@@ -16,9 +16,6 @@ struct GameView: View {
     var body: some View {
         ZStack{
             VStack {
-                LogoView(logoFileName: "Logo")
-                Spacer()
-                
                 HStack {
                     HStack{
                         Text("Your\nMoney".uppercased())
@@ -47,22 +44,24 @@ struct GameView: View {
                             .resizable()
                             .modifier(CardImageModifier())
                     }
-                    HStack {
-                        ZStack{
-                            CardView()
-                            Image(cards[playerDeck[1]])
-                                .resizable()
-                                .modifier(CardImageModifier())
-                        }
-                        ZStack{
-                            CardView()
-                            Image(cards[playerDeck[2]])
-                                .resizable()
-                                .modifier(CardImageModifier())
-                        }
-                    }
+//                    ZStack{
+//                        CardView()
+//                        Image(cards[playerDeck[1]])
+//                            .resizable()
+//                            .modifier(CardImageModifier())
+//                    }
+//                    ZStack{
+//                        CardView()
+//                       Image(cards[playerDeck[2]])
+//                            .resizable()
+//                            .modifier(CardImageModifier())
+//                    }
+                    
                     
                 }
+                Spacer()
+                
+                
                 
                 
             }
