@@ -14,7 +14,7 @@ struct buttonMenu: View {
     
     var body: some View {
         
-        let opacity = disable ? 0.3 : 1
+        
         ZStack{
             RoundedRectangle(cornerRadius: 40)
                 .fill(.black)
@@ -25,8 +25,8 @@ struct buttonMenu: View {
                 .multilineTextAlignment(.center)
                 .foregroundColor(.white)
         }
-        .frame(width:400, height:100)
-        .opacity(opacity)
+        .frame(width:350, height:100)
+        
         
     }
 }

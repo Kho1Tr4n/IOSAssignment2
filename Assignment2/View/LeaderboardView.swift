@@ -8,13 +8,25 @@
 import SwiftUI
 
 struct LeaderboardView: View {
+    var playerList : [Player]
+    var userName : String
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ForEach(playerList.indices, id:\.self) {
+            place in
+            NavigationLink{
+                LeaderboardDetail(player: playerList[place])
+            } label:
+            {
+                    LeaderboardRow(rank: place + 1, playerName: playerList[place].playerName , score: playerList[place].highScore)
+                
+            }
+        }
     }
 }
 
 struct LeaderboardView_Previews: PreviewProvider {
     static var previews: some View {
-        LeaderboardView()
+        LeaderboardView(playerList: loadAllplayer() ?? [], userName: "Kaiser")
     }
 }

@@ -56,7 +56,7 @@ struct CardImageModifier: ViewModifier{
     func body(content: Content) -> some View {
         content
             .scaledToFit()
-            .frame(width: 100, height: 150, alignment: .center)
+            .frame(width: 100, alignment: .center)
             .modifier(ShadowModifier())
     }
 }
@@ -69,8 +69,6 @@ struct IconImageModifier: ViewModifier{
             .modifier(ShadowModifier())
     }
 }
-
-
 struct BetCapsuleModifier: ViewModifier{
     func body(content: Content) -> some View {
         content
@@ -78,7 +76,7 @@ struct BetCapsuleModifier: ViewModifier{
             .font(.system(size: 25, weight: .heavy, design: .rounded))
             .modifier(ShadowModifier())
             .background(
-                Capsule().fill(LinearGradient(gradient: Gradient(colors: [Color("ColorYellowRMIT"), Color("ColorRedRMIT")]), startPoint: .bottom, endPoint: .top))
+                Capsule().fill(LinearGradient(gradient: Gradient(colors: [Color.white, Color.red]), startPoint: .bottom, endPoint: .top))
                     .frame(width: 80, height: 50, alignment: .center)
             )
     }

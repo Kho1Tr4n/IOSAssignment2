@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "FourHearts.png",
+      "filename" : "casino-chips.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "FourHearts@2x.png",
+      "filename" : "casino-chips@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "FourHearts@3x.png",
+      "filename" : "casino-chips@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

@@ -1,0 +1,384 @@
+
+
+[
+    {
+        "id" : 1,
+        "cardName": "Ace Hearts",
+        "imageName": "AceHeart",
+        "cardValue": 1
+        
+    },
+    {
+        "id" : 2,
+        "cardName": "Two Hearts",
+        "imageName": "TwoHeart",
+        "cardValue": 2
+        
+    },
+    {
+        "id" : 3,
+        "cardName": "ThreeHearts",
+        "imageName": "ThreeHeart",
+        "cardValue": 3
+        
+    },
+    {
+        "id" : 4,
+        "cardName": "FourHearts",
+        "imageName": "FourHeart",
+        "cardValue": 4
+        
+    },
+    {
+        "id" : 5,
+        "cardName": "FiveHearts",
+        "imageName": "FiveHeart",
+        "cardValue": 5
+        
+    },
+    {
+        "id" : 6,
+        "cardName": "SixHearts",
+        "imageName": "SixHeart",
+        "cardValue": 6
+        
+    },
+    {
+        "id" : 7,
+        "cardName": "SevenHearts",
+        "imageName": "SevenHeart",
+        "cardValue": 7
+        
+    },
+    {
+        "id" : 8,
+        "cardName": "EightHearts",
+        "imageName": "EightHeart",
+        "cardValue": 8
+        
+    },
+    {
+        "id" : 9,
+        "cardName": "NineHearts",
+        "imageName": "NineHeart",
+        "cardValue": 9
+        
+    },
+    {
+        "id" : 10,
+        "cardName": "TenHearts",
+        "imageName": "TenHeart",
+        "cardValue": 10
+        
+    },
+    {
+        "id" : 11,
+        "cardName": "JackHearts",
+        "imageName": "JackHeart",
+        "cardValue": 10
+        
+    },
+    {
+        "id" : 12,
+        "cardName": "QueenHearts",
+        "imageName": "QueenHeart",
+        "cardValue": 10
+        
+    },
+    
+    {
+        "id" : 13,
+        "cardName": "KingHearts",
+        "imageName": "KingHeart",
+        "cardValue": 10
+        
+    },
+    
+    {
+        "id" : 14,
+        "cardName": "AceDiamond",
+        "imageName": "AceDiamond",
+        "cardValue": 1
+        
+    },
+    
+    
+    {
+        "id" : 15,
+        "cardName": "TwoDiamond",
+        "imageName": "TwoDiamond",
+        "cardValue": 2
+        
+    },
+    
+    {
+        "id" : 16,
+        "cardName": "ThreeDiamond",
+        "imageName": "ThreeDiamond",
+        "cardValue": 3
+        
+    },
+    {
+        "id" : 17,
+        "cardName": "FourDiamond",
+        "imageName": "FourDiamond",
+        "cardValue": 4
+        
+    },
+    
+    {
+        "id" : 18,
+        "cardName": "FiveDiamond",
+        "imageName": "FiveDiamond",
+        "cardValue": 5
+        
+    },
+    
+    {
+        "id" : 19,
+        "cardName": "SixDiamond",
+        "imageName": "SixDiamond",
+        "cardValue": 6
+        
+    },
+    
+    {
+        "id" : 20,
+        "cardName": "SevenDiamond",
+        "imageName": "SevenDiamond",
+        "cardValue": 7
+        
+    },
+    
+    {
+        "id" : 21,
+        "cardName": "EightDiamond",
+        "imageName": "EightDiamond",
+        "cardValue": 8
+        
+    },
+    
+    {
+        "id" : 22,
+        "cardName": "NineDiamond",
+        "imageName": "NineDiamond",
+        "cardValue": 9
+        
+    },
+    
+    {
+        "id" : 23,
+        "cardName": "TenDiamond",
+        "imageName": "TenDiamond",
+        "cardValue": 10
+        
+    },
+    
+    {
+        "id" : 24,
+        "cardName": "JackDiamond",
+        "imageName": "JackDiamond",
+        "cardValue": 10
+        
+    },
+    
+    {
+        "id" : 25,
+        "cardName": "QueenDiamond",
+        "imageName": "QueenDiamond",
+        "cardValue": 10
+        
+    },
+    
+    {
+        "id" : 26,
+        "cardName": "KingDiamond",
+        "imageName": "KingDiamond",
+        "cardValue": 10
+        
+    },
+    {
+        "id" : 27,
+        "cardName": "AceClub",
+        "imageName": "AceClub",
+        "cardValue": 1
+        
+    },
+    {
+        "id" : 28,
+        "cardName": "TwoClub",
+        "imageName": "TwoClub",
+        "cardValue": 2
+        
+    },
+    {
+        "id" : 29,
+        "cardName": "ThreeClub",
+        "imageName": "ThreeClub",
+        "cardValue": 3
+        
+    },
+    {
+        "id" : 30,
+        "cardName": "FourClub",
+        "imageName": "FourClub",
+        "cardValue": 4
+        
+    },
+    {
+        "id" : 31,
+        "cardName": "FiveClub",
+        "imageName": "FiveClub",
+        "cardValue": 5
+        
+    },
+    {
+        "id" : 32,
+        "cardName": "SixClub",
+        "imageName": "SixClub",
+        "cardValue": 6
+        
+    },
+    {
+        "id" : 33,
+        "cardName": "SevenClub",
+        "imageName": "SevenClub",
+        "cardValue": 7
+        
+    },
+    {
+        "id" : 34,
+        "cardName": "EightClub",
+        "imageName": "EightClub",
+        "cardValue": 8
+        
+    },
+    {
+        "id" : 35,
+        "cardName": "NineClub",
+        "imageName": "NineClub",
+        "cardValue": 9
+        
+    },
+    {
+        "id" : 36,
+        "cardName": "TenClub",
+        "imageName": "TenClub",
+        "cardValue": 10
+        
+    },
+    {
+        "id" : 37,
+        "cardName": "JackClub",
+        "imageName": "JackClub",
+        "cardValue": 10
+        
+    },
+    {
+        "id" : 38,
+        "cardName": "QueenClub",
+        "imageName": "QueenClub",
+        "cardValue": 10
+        
+    },
+    {
+        "id" : 39,
+        "cardName": "KingClub",
+        "imageName": "KingClub",
+        "cardValue": 10
+        
+    },
+    
+    {
+        "id" : 40,
+        "cardName": "AceSpade",
+        "imageName": "AceSpade",
+        "cardValue": 1
+        
+    },
+    {
+        "id" : 41,
+        "cardName": "TwoSpade",
+        "imageName": "TwoSpade",
+        "cardValue": 2
+        
+    },
+    {
+        "id" : 42,
+        "cardName": "ThreeSpade",
+        "imageName": "ThreeSpade",
+        "cardValue": 3
+        
+    },
+    {
+        "id" : 43,
+        "cardName": "FourSpade",
+        "imageName": "FourSpade",
+        "cardValue": 4
+        
+    },
+    {
+        "id" : 44,
+        "cardName": "FiveSpade",
+        "imageName": "FiveSpade",
+        "cardValue": 5
+        
+    },
+    {
+        "id" : 45,
+        "cardName": "SixSpade",
+        "imageName": "SixSpade",
+        "cardValue": 6
+        
+    },
+    {
+        "id" : 46,
+        "cardName": "SevenSpade",
+        "imageName": "SevenSpade",
+        "cardValue": 7
+        
+    },
+    {
+        "id" : 47,
+        "cardName": "EightSpade",
+        "imageName": "EightSpade",
+        "cardValue": 8
+        
+    },
+    {
+        "id" : 48,
+        "cardName": "Nine Spade",
+        "imageName": "NineSpade",
+        "cardValue": 9
+        
+    },
+    {
+        "id" : 49,
+        "cardName": "Ten Spade",
+        "imageName": "TenSpade",
+        "cardValue": 10
+        
+    },
+    {
+        "id" : 50,
+        "cardName": "Jack Spade",
+        "imageName": "JackSpade",
+        "cardValue": 10
+        
+    },
+    {
+        "id" : 51,
+        "cardName": "Queen Spade",
+        "imageName": "QueenSpade",
+        "cardValue": 10
+        
+    },
+    {
+        "id" : 52,
+        "cardName": "King Spade",
+        "imageName": "KingSpade",
+        "cardValue": 10
+        
+    }
+
+]

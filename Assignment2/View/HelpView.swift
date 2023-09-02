@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct HelpView: View {
-  @Environment(\.dismiss) var dismiss
   
   var body: some View {
       ZStack{
@@ -19,33 +18,25 @@ struct HelpView: View {
             Spacer()
             
             Form {
-              Section(header: Text("How To Play")) {
-                  Text("Just spin the reels to play.")
-                  Text("Matching all icons to win.")
-                  Text("The winning amount will be 10x of your betting amount.")
-                  Text("You can reset the money and highscore by clicking on the button Reset.")
+              Section(header: Text("Introduce")) {
+                  Text("Scratch card, also known as three cards, is a type of card game with a deck of playing cards. It can be said that this is one of the simplest and fastest ways to play folk cards and depends entirely on the element of luck. Scratch cards are played with two or more people, there is no limit to the number of people, but each person must have three cards.")
               }
+                Section(header:Text("HOW TO PLAY")){
+                    Text("Player will have 3 cards and House will have three cards")
+                    Text("Those cards such as 2, 3, 4, 5, 6 , 7, 8, 9 is count as the same value on that cards")
+                    Text("10, Jack, Queen or King is count as 10")
+                    Text("The total score of player's deck is the odd-number of the total three cards score")
+                    Text("For example, if your total three cards's score is 15 that means your score is 5")
+                    Text("In order to win your score must be larger than house'score")
+                    
+                }
                 
             }
             .font(.system(.body, design: .rounded))
           }
           .padding(.top, 40)
-          .overlay(
-            Button(action: {
-              audioPlayer?.stop()
-              dismiss()
-            }) {
-              Image(systemName: "xmark.circle")
-                .font(.title)
-            }
-            .foregroundColor(.white)
-            .padding(.top, 30)
-            .padding(.trailing, 20),
-            alignment: .topTrailing
-            )
-            .onAppear(perform: {
-              playSound(sound: "drum-music", type: "mp3")
-            })
+          
+            
       }
     
   }

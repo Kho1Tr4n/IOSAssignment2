@@ -6,9 +6,17 @@
 //
 
 import Foundation
+import SwiftUI
 
 
-struct Card : Codable{
-    var cardName : String
-    var cardValue : Int
+struct Card : Identifiable, Codable{
+    var id: Int
+    var cardName: String
+    var cardValue: Int
+    
+    
+    var imageName:String
+//    var image:Image {
+//        Image(imageName)
+//    }
 }
