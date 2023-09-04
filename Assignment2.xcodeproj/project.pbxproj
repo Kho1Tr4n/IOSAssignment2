@@ -150,7 +150,6 @@
 			children = (
 				E86D70B42AA1A82E005D8B5C /* Helper */,
 				28C21E432A9F2E630002034F /* Sound */,
-				28EB14AB2A9F0F3F0098641E /* Components */,
 				28EB14A42A9F0E630098641E /* Models */,
 				28EB14A12A9F0E310098641E /* View */,
 				2813D8FE2A9EFDB00087CD1F /* Assignment2App.swift */,
@@ -203,6 +202,7 @@
 		28EB14A12A9F0E310098641E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				28EB14AC2A9F0F560098641E /* buttonMenu.swift */,
 				28EB14A22A9F0E490098641E /* LogoView.swift */,
 				28EB14AE2A9F10630098641E /* MainMenuView.swift */,
 				28EB14B02A9F10880098641E /* GameView.swift */,
@@ -229,14 +229,6 @@
 				E86D70AE2AA1A4C4005D8B5C /* playerData.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		28EB14AB2A9F0F3F0098641E /* Components */ = {
-			isa = PBXGroup;
-			children = (
-				28EB14AC2A9F0F560098641E /* buttonMenu.swift */,
-			);
-			path = Components;
 			sourceTree = "<group>";
 		};
 		E86D70B42AA1A82E005D8B5C /* Helper */ = {
@@ -565,6 +557,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Assignment2/Preview Content\"";
+				DEVELOPMENT_TEAM = 43ZAJ9K9TN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -593,6 +586,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Assignment2/Preview Content\"";
+				DEVELOPMENT_TEAM = 43ZAJ9K9TN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

@@ -18,10 +18,7 @@ struct HelpView: View {
             Spacer()
             
             Form {
-              Section(header: Text("Introduce")) {
-                  Text("Scratch card, also known as three cards, is a type of card game with a deck of playing cards. It can be said that this is one of the simplest and fastest ways to play folk cards and depends entirely on the element of luck. Scratch cards are played with two or more people, there is no limit to the number of people, but each person must have three cards.")
-              }
-                Section(header:Text("HOW TO PLAY")){
+                Section(header:Text("RULES")){
                     Text("Player will have 3 cards and House will have three cards")
                     Text("Those cards such as 2, 3, 4, 5, 6 , 7, 8, 9 is count as the same value on that cards")
                     Text("10, Jack, Queen or King is count as 10")
@@ -29,6 +26,14 @@ struct HelpView: View {
                     Text("For example, if your total three cards's score is 15 that means your score is 5")
                     Text("In order to win your score must be larger than house'score")
                     
+                }
+                Section(header: Text("HOW TO PLAY")) {
+                    Text("The cards will be fold when you are start the new game")
+                    Text("Your coins available will be on top left and it will increase if you win and decrease if you loose")
+                    Text("Your highest score will be on top right and it will change if your coins is larger than your previous highscore")
+                    Text("You can choose bet 50 or 100 at the bottom below")
+                    Text("The cards will be randomize when you click play and the cards will be flipped and reveal")
+                    Text("In order to continute to the new game you have to click the fold button then the play button will reveal for you to keep playing")
                 }
                 
             }

@@ -17,9 +17,12 @@ struct ButtonModifier: ViewModifier {
 }
 
 struct ShadowModifier: ViewModifier{
+    @AppStorage("isDarkMode") private var isDarkMode = false
     func body(content: Content) -> some View {
-        content
-            .shadow(color:Color("ColorBlackTransparent"), radius: 7)
+            content
+                .shadow(color:Color("Shadow"), radius: 7)
+        
+        
     }
 }
 
@@ -48,7 +51,7 @@ struct scoreCapsuleStyle: ViewModifier{
             .padding(.horizontal, 16)
             .background(
                 Capsule()
-                    .foregroundColor(.red))
+                    .foregroundColor(Color("Red")))
     }
 }
 

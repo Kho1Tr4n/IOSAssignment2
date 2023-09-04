@@ -8,7 +8,7 @@
 import Foundation
 
 struct Game : Identifiable , Codable {
-    var id: Int
+    var id: UUID
     var mode : String
     var score : Int
 }

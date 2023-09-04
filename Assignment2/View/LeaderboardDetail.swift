@@ -13,34 +13,56 @@ struct LeaderboardDetail: View {
     
     init(player:Player) {
         self.player = player
-        var achievementList = [Achievement]()
-        
-        for (name) in player.achievement{
-            achievementList.append(achievements[name]!)
+        self._playerAchievement = State(initialValue: [Achievement]())
+    }
+    
+    func checkAchievement(){
+        if (player.highScore >= 2500)
+        {
+            playerAchievement.append(achievements["2500highScore"]!)
+            
+        }
+        if (player.highScore >= 3500)
+        {
+            playerAchievement.append(achievements["3500highScore"]!)
+            
+        }
+        if (player.highScore >= 5000)
+        {
+            playerAchievement.append(achievements["5000highScore"]!)
+            
+        }
+        if (player.history.count >= 5) {
+            playerAchievement.append(achievements["5games"]!)
+        }
+        if (player.history.count >= 10) {
+            playerAchievement.append(achievements["10games"]!)
+        }
+        if (player.history.count >= 20) {
+            playerAchievement.append(achievements["20games"]!)
         }
         
-        self._playerAchievement = State(initialValue: achievementList)
+        print(playerAchievement)
     }
     
     var body: some View {
         ScrollView {
             VStack{
-                Text("Info")
-                    .font(.system(size:30))
-                    .fontWeight(.bold)
                 
                 Divider()
-                    .overlay(.gray)
+                    .overlay(.black)
+                
                 HStack{
                 
                 VStack {
-                    Text("Your Coins: ")
-                    Text(String(player.coins))
+                    Text("Highest Score: ")
+                    Text(String(player.highScore))
                         .bold()
                         
                     }
                 
                     Divider()
+                        .overlay(.black)
                     
                     VStack {
                         Text("Game Played:")
@@ -67,13 +89,14 @@ struct LeaderboardDetail: View {
                         .padding(.vertical, 10)
                     
                     if(player.history.count == 0){
-                        Text("No Players")
-                            .foregroundColor(.black)
+                        Text("No Games has play")
+                            
                     }
                     ForEach(player.history) {
                         game in
                         HStack{
                             Text("Mode: \(game.mode)")
+                                .bold()
                             
                             Spacer()
                             
@@ -81,11 +104,14 @@ struct LeaderboardDetail: View {
                                 MoneyIcon()
                                     .frame(width: 40)
                                 Text(String(game.score))
-                                    .foregroundColor(.black)
                                     .bold()
                             }
                             
                         }.padding(.leading, 10)
+                        .padding(.trailing, 10)
+                        .background(Color("Red"))
+                        .cornerRadius(30)
+                        .padding(.leading, 10)
                         .padding(.trailing, 10)
                         
                         
@@ -99,36 +125,44 @@ struct LeaderboardDetail: View {
                             .font(.system(size:20))
                             .bold()
                         
-                        if(playerAchievement.isEmpty){
-                            Text("You haven't earn an achievement yet")
-                                .foregroundColor(.black)
-                            
+                        if(!playerAchievement.isEmpty){
+                        
                             ForEach(playerAchievement) { achievement in
                                 HStack{
                                     achievement.image
                                         .resizable()
                                         .scaledToFit()
-                                        .frame(width: 60)
+                                        .frame(width: 50)
                                         .cornerRadius(20)
                                         .padding(.leading, 20)
                                         .padding(.trailing, 14)
-                                    
+                                        .fontWeight(.heavy)
+                                        .foregroundColor(Color(achievement.color))
+
                                     Text(achievement.name)
                                         .bold()
                                         .font(.system(size:20))
-                                    
+
                                     Spacer()
                                 }
-                                .frame(height:100)
-                                .background(Color(.gray))
+                                .frame(height:70)
+                                .background(Color("Red"))
                                 .cornerRadius(20)
+                                .padding(.trailing,10)
+                                .padding(.leading, 10)
                             }
                             
                             
+                        } else {
+                            Text("You haven't earn an achievement yet")
                         }
                     
                 }
             }
+        }
+        
+        .onAppear{
+            checkAchievement()
         }
         .navigationTitle("\(player.playerName) Achievement")
     }
@@ -136,7 +170,7 @@ struct LeaderboardDetail: View {
 
 struct LeaderboardDetail_Previews: PreviewProvider {
     static var previews: some View {
-        LeaderboardDetail(player:Player(id: UUID(), playerName: "Kaiser", highScore:10000, coins: 1000, achievement: [], history: [Game(id:1,mode: "Easy", score: 100 )]
+        LeaderboardDetail(player:Player(id: UUID(), playerName: "Kaiser", highScore:10000, coins: 1000, achievement: [], history: [Game(id:UUID(),mode: "Easy", score: 100 )]
            ))
     }
 }

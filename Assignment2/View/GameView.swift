@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct GameView: View {
-    @State var highScore = UserDefaults.standard.integer(forKey: "highScore")
-    @State var coins : Int = 1000
-    @State var betAmount = 10
+    var mode: String
+    
+    @State var betAmount = 50
     @State var houseDeck = [0,1,2]
     @State var houseScore : Int = 0
     @State var playerDeck = [0,1,2]
@@ -21,9 +21,11 @@ struct GameView: View {
     @State var showGameOver = false
     @State var isCardFlip = false
     @State var rotation : Double = 0
+    @State var player: Player
     
     
     
+    //MARK: RANDOM CARDS FUNCTION
     func randomCards() {
         playerDeck = playerDeck.map({ _ in
             Int.random(in: 0...cards.count - 1)
@@ -36,6 +38,7 @@ struct GameView: View {
         print(playerDeck)
     }
     
+    //MARK: CHECK WIN
     func checkWinning(){
         houseScore = (cards[houseDeck[0]].cardValue + cards[houseDeck[1]].cardValue + cards[houseDeck[2]].cardValue) % 10
         print(houseScore)
@@ -47,7 +50,7 @@ struct GameView: View {
             
             playerWins()
             
-            if(coins > highScore){
+            if(player.coins > player.highScore){
                 newHighScore()
             }
         }
@@ -56,33 +59,60 @@ struct GameView: View {
             playerLose()
             
         }
-        
-        
-//        else if (playerScore == houseScore){
-//            playerDraw()
-//        }
 
     }
     
+    //MARK: WINNING OR LOSING FUNCTION
     func playerWins(){
-        coins += (betAmount * 4)
+        switch(mode){
+            
+        case "Easy":
+            player.coins += (betAmount * 5)
+            
+        case "Medium":
+            player.coins += (betAmount * 5)
+            
+        case "Hard":
+            player.coins += (betAmount * 5)
+            
+        default:
+            player.coins += (betAmount * 5)
+        }
+        
         playSound(sound: "winning", type: "wav")
     }
     
-//    func playerDraw(){
-//        self.coins == coins
-//    }
+
     
     func playerLose(){
-        coins -= (betAmount * 2)
+        switch(mode){
+            
+        case "Easy":
+            player.coins -= betAmount
+            
+        case "Medium":
+            player.coins -= (betAmount * 3)
+            
+            
+        case "Hard":
+            player.coins -= (betAmount * 8)
+            
+        default:
+            player.coins -= betAmount
+        }
+        
     }
     
+    //MARK: SET NEW HIGHSCORE
     func newHighScore(){
-        highScore = coins
-        UserDefaults.standard.set(highScore, forKey: "highScore")
-        playSound(sound: "highscore", type: "mp3")
+        if (player.coins > player.highScore ){
+            player.highScore = player.coins
+            saveplayer(playerName: player.playerName, saveplayer: player)
+            playSound(sound: "highscore", type: "mp3")
+        }
     }
     
+    //MARK: CHOOSE BET FUNCTION
     func chooseBet50() {
         betAmount = 50
         isChooseBet50 = true
@@ -98,14 +128,24 @@ struct GameView: View {
         playSound(sound: "bet-chip", type: "mp3")
     }
     
-    
+    //MARK: GAME OVER
     func gameOver(){
-        if coins <= 0 {
+        if player.coins <= 0 {
+            player.history.append(Game(id: UUID(), mode: mode, score: player.highScore))
+            player.coins = 1000
+            saveplayer(playerName: player.playerName, saveplayer: player)
             showGameOver = true
+            
             playSound(sound: "gameover", type: "mp3")
         }
     }
     
+    //MARK: ACHIEVEMENT
+    func checkAchievement(){
+        
+    }
+    
+    //MARK: GAME DESIGN
     var body: some View {
         ZStack{
             VStack {
@@ -114,7 +154,7 @@ struct GameView: View {
                         Text("Your\nMoney".uppercased())
                             .modifier(scoreLabelStyle())
                             .multilineTextAlignment(.trailing)
-                        Text("\(coins)")
+                        Text("\(player.coins)")
                             .modifier(scoreNumberStyle())
                     }
                     .modifier(scoreCapsuleStyle())
@@ -122,7 +162,7 @@ struct GameView: View {
                     Spacer()
                     
                     HStack{
-                        Text("\(highScore)")
+                        Text("\(player.highScore)")
                             .modifier(scoreNumberStyle())
                             .multilineTextAlignment(.leading)
                         Text("High\nScore".uppercased())
@@ -132,8 +172,10 @@ struct GameView: View {
                 }
                 Spacer()
                 
+                
+                //MARK: HOUSE DECK DESIGN
                 VStack{
-                    Text("NPC DECK")
+                    Text("HOUSE DECK")
                         .fontWeight(.bold)
                         .foregroundColor(.black)
                         .font(.system(size: 30))
@@ -241,6 +283,7 @@ struct GameView: View {
                 }
                 
                 Spacer()
+                //MARK: PLAYER DECK DESIGN
                 
                 VStack{
                     
@@ -355,6 +398,7 @@ struct GameView: View {
                         .foregroundColor(.black)
                         .font(.system(size:30))
                     
+                    //MARK: BUTTON TO PLAY
                     HStack {
                        
                         Button {
@@ -364,10 +408,11 @@ struct GameView: View {
                             if (!isCardFlip) {
                                 self.randomCards()
                                 
-                                
                                 self.checkWinning()
                                 
                                 self.gameOver()
+                                
+                                
                             }
                             
                         } label: {
@@ -438,7 +483,9 @@ struct GameView: View {
                     
                 }
 
-            } 
+            }
+            
+            //MARK: GAME OVER DESIGN
             if showGameOver{
                 ZStack{
                     VStack{
@@ -462,7 +509,7 @@ struct GameView: View {
                                 .multilineTextAlignment(.center)
                             Button {
                                 self.showGameOver = false
-                                self.coins = 1000
+                                player.coins = 1000
                             } label: {
                                 Text("Play Again?".uppercased())
                                     .foregroundColor(.black)
@@ -493,6 +540,6 @@ struct GameView: View {
 
 struct GameView_Previews: PreviewProvider {
     static var previews: some View {
-        GameView()
+        GameView(mode: "Easy", player:Player(id: UUID(), playerName: "Khoi", highScore: 0, coins: 1000, achievement: [], history: []))
     }
 }
