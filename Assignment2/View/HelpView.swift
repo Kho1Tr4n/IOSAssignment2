@@ -193,6 +193,15 @@ struct HelpView: View {
                               .resizable()
                               .frame(width: 185, height: 350)
                       }
+                      
+                      Text("You can keep playing the game even after you change the game's diffculty, your coins will keep the same and the high score too.\n ")
+                      
+                      VStack{
+                          Text("If you loose all of your coins the game will pop up an announce to let you know that the game is over and you can press 'Play Again' button to create a new game")
+                          Image("GameOver")
+                              .resizable()
+                              .frame(width: 185, height: 350)
+                      }
                   }
                   .padding(.horizontal, 10.0)
                   
