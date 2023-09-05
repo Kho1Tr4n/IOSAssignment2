@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "CardBack 1.png",
+      "filename" : "PlayBtn.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "CardBack@2x 1.png",
+      "filename" : "PlayBtn@2x.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "CardBack@3x 1.png",
+      "filename" : "PlayBtn@3x.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

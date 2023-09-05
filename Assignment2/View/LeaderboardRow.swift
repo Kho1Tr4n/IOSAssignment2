@@ -1,9 +1,14 @@
-//
-//  AchievementDisplay.swift
-//  Assignment2
-//
-//  Created by Tran Trung on 01/09/2023.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 2
+  Author: Tran Minh Khoi
+  ID: s3916827
+  Created  date: 01/09/2023
+  Last modified: 05/09/2023
+  Acknowledgement: None
+*/
 
 import SwiftUI
 
@@ -11,8 +16,10 @@ struct LeaderboardRow: View {
     var rank: Int
     var player: Player
     
+    
     var body: some View {
         HStack{
+            //MARK: RANK DISPLAY
             Text(String(rank))
                 .foregroundColor(.black)
                 .frame(width: 30, height: 30)
@@ -21,6 +28,7 @@ struct LeaderboardRow: View {
                 .bold()
                 .clipShape(Circle())
             
+            //MARK: PLAYER NAME DISPLAY
             Text(player.playerName)
                 .foregroundColor(.black)
                 .font(.system(size: 25))
@@ -31,6 +39,7 @@ struct LeaderboardRow: View {
             
             Spacer()
             
+            //MARK: HIGHSCORE PLAYER DISPLAY
             HStack{
             Image("money")
                 .resizable()

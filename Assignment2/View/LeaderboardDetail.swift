@@ -1,9 +1,15 @@
-//
-//  LeaderboardDetail.swift
-//  Assignment2
-//
-//  Created by Tran Trung on 01/09/2023.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 2
+  Author: Tran Minh Khoi
+  ID: s3916827
+  Created  date: 01/09/2023
+  Last modified: 05/09/2023
+  Acknowledgement: None
+*/
+
 
 import SwiftUI
 
@@ -16,6 +22,7 @@ struct LeaderboardDetail: View {
         self._playerAchievement = State(initialValue: [Achievement]())
     }
     
+    //MARK: CHECK ACHIEVEMENT
     func checkAchievement(){
         if (player.highScore >= 2500)
         {
@@ -45,6 +52,7 @@ struct LeaderboardDetail: View {
         print(playerAchievement)
     }
     
+    //MARK: DESIGN INFO PLAYER
     var body: some View {
         ScrollView {
             VStack{
@@ -53,7 +61,9 @@ struct LeaderboardDetail: View {
                     .overlay(.black)
                 
                 HStack{
-                
+                    
+                //MARK: HIGHEST SCORE DISPLAY
+                    
                 VStack {
                     Text("Highest Score: ")
                     Text(String(player.highScore))
@@ -81,7 +91,7 @@ struct LeaderboardDetail: View {
                 .padding(.horizontal, 20)
             
             
-                
+                //MARK: GAME HISTORY DISPLAY
                 VStack{
                     Text("Game history:")
                         .font(.system(size:20))
@@ -119,6 +129,8 @@ struct LeaderboardDetail: View {
                     Divider()
                         .overlay(.black)
                         .padding(.horizontal, 20)
+                    
+                    //MARK: ACHIEVEMENT DISPLAY
                     
                     VStack{
                         Text("Achievement: ")

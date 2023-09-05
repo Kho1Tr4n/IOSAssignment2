@@ -1,4 +1,15 @@
 
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 2
+  Author: Tran Minh Khoi
+  ID: s3916827
+  Created  date: 25/08/2023
+  Last modified: 05/09/2023
+  Acknowledgement: None
+*/
 
 import SwiftUI
 
@@ -8,6 +19,7 @@ struct MainMenuView: View {
     @State var player:Player
     @State var logIn : Bool
     @State var gameMode = "Easy"
+    
     
     init(){
         self._player = State(initialValue: Player(id: UUID(), playerName: "", highScore: 0, coins: 1000, achievement: [], history: []))
@@ -49,7 +61,7 @@ struct MainMenuView: View {
                         .font(.system(size:50))
                         .foregroundColor(.black)
                         
-                    
+                    //MARK: ENTER USERNAME
                     HStack {
                         Text("Username:")
                             .font(.system(size:25))
@@ -62,6 +74,17 @@ struct MainMenuView: View {
                                 .multilineTextAlignment(.center)
                                 .cornerRadius(40)
                             
+                            Button{
+                                login()
+                                logIn = true
+                                
+                            } label: {
+                                Text("Confirm")
+                                    .bold()
+                                    .background(Color(hue: 0.321, saturation: 1.0, brightness: 1.0))
+                                    .cornerRadius(30)
+                            }
+                            
                             
                             
                         } else {
@@ -73,27 +96,14 @@ struct MainMenuView: View {
                     .padding(.leading, 10)
                     .padding(.trailing, 10)
                     
-                    Button{
-                        login()
-                        logIn = true
-                    } label: {
-                        Text("Save")
-                            .bold()
-                            .background(.green)
-                            .cornerRadius(30)
-                    }
                     
-                    Button {
-                        UserDefaults.standard.set([String:Data](), forKey: "players")
-                    } label: {
-                        Text("reset")
-                    }
-                    
+                    //MARK: HIGHSCORE PLAYER DISPLAY
                     Text("Highscore: \(player.highScore)" )
                         .font(.system(size: 20))
                         .bold()
                     
                     
+                    //MARK: NAVIGATION TO EACH VIEW
                     VStack {
                         if(logIn) {
                             NavigationLink {
@@ -122,12 +132,7 @@ struct MainMenuView: View {
                     }
                     
                     
-                    
-                    
                     Spacer()
-                    
-                  
-                    
                     
                 }.onAppear(perform: {
                     print("APPEAR")

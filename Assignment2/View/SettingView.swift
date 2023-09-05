@@ -1,14 +1,20 @@
-//
-//  SettingView.swift
-//  Assignment2
-//
-//  Created by Khoi Tran Minh on 30/08/2023.
-//
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 2
+  Author: Tran Minh Khoi
+  ID: s3916827
+  Created  date: 30/08/2023
+  Last modified: 05/09/2023
+  Acknowledgement: None
+*/
 
 import SwiftUI
 
 var mode = ["Easy", "Medium", "Hard"]
 
+//MARK: SETTING DESIGN
 struct SettingView: View {
     @AppStorage("isDarkMode") private var isDarkMode = false
     @Binding var gameMode : String
@@ -16,6 +22,7 @@ struct SettingView: View {
         VStack{
             Spacer()
             
+            //MARK: DARK MODE TOGGLE
             IsDarkMode()
                 .bold()
            
@@ -24,7 +31,7 @@ struct SettingView: View {
                 .font(.system(size: 20))
                 .frame(width: 180, alignment: .leading)
             
-            
+            //MARK: DISPLAY MODE
             Picker("MODE", selection: $gameMode) {
                 ForEach(mode, id:\.self) {
                     modes in
@@ -41,7 +48,8 @@ struct SettingView: View {
             
                 
         } .frame(width:300,alignment: .leading)
-           
+        
+        //MARK: TEXT EXPLAIN EACH DIFFICULTY
         VStack {
             if(gameMode == "Easy"){
                 Text("You will get x5 your bet amount when you win. You loose only the same amount of bet amount you choose")
