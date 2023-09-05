@@ -40,7 +40,6 @@ struct MainMenuView: View {
         } else {
             player = tPlayer!
         }
-        print(player)
 
     }
 
