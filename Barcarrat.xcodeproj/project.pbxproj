@@ -21,6 +21,8 @@
 		28C21E4E2A9F2E950002034F /* bet-chip.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C21E472A9F2E950002034F /* bet-chip.mp3 */; };
 		28C21E4F2A9F2E950002034F /* ring-up.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C21E482A9F2E950002034F /* ring-up.mp3 */; };
 		28C21E502A9F2E950002034F /* drum-music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 28C21E492A9F2E950002034F /* drum-music.mp3 */; };
+		28C8C9282AA7004800CBB25D /* coinwin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 28C8C9272AA7004800CBB25D /* coinwin.wav */; };
+		28C8C92A2AA7013500CBB25D /* loosecoin.wav in Resources */ = {isa = PBXBuildFile; fileRef = 28C8C9292AA7013500CBB25D /* loosecoin.wav */; };
 		28EB14A32A9F0E490098641E /* LogoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EB14A22A9F0E490098641E /* LogoView.swift */; };
 		28EB14A62A9F0E790098641E /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EB14A52A9F0E790098641E /* Modifier.swift */; };
 		28EB14AA2A9F0F2E0098641E /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EB14A92A9F0F2E0098641E /* Player.swift */; };
@@ -61,14 +63,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2813D8FB2A9EFDB00087CD1F /* Assignment2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assignment2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2813D8FB2A9EFDB00087CD1F /* Barcarrat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Barcarrat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2813D8FE2A9EFDB00087CD1F /* Assignment2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment2App.swift; sourceTree = "<group>"; };
 		2813D9002A9EFDB00087CD1F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2813D9022A9EFDB20087CD1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2813D9052A9EFDB20087CD1F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		2813D90B2A9EFDB20087CD1F /* Assignment2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2813D90B2A9EFDB20087CD1F /* BarcarratTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcarratTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2813D90F2A9EFDB20087CD1F /* Assignment2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment2Tests.swift; sourceTree = "<group>"; };
-		2813D9152A9EFDB20087CD1F /* Assignment2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Assignment2UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2813D9152A9EFDB20087CD1F /* BarcarratUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BarcarratUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2813D9192A9EFDB20087CD1F /* Assignment2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment2UITests.swift; sourceTree = "<group>"; };
 		2813D91B2A9EFDB20087CD1F /* Assignment2UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment2UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		28C21E412A9F297B0002034F /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -78,6 +80,8 @@
 		28C21E472A9F2E950002034F /* bet-chip.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "bet-chip.mp3"; sourceTree = "<group>"; };
 		28C21E482A9F2E950002034F /* ring-up.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ring-up.mp3"; sourceTree = "<group>"; };
 		28C21E492A9F2E950002034F /* drum-music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "drum-music.mp3"; sourceTree = "<group>"; };
+		28C8C9272AA7004800CBB25D /* coinwin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = coinwin.wav; sourceTree = "<group>"; };
+		28C8C9292AA7013500CBB25D /* loosecoin.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = loosecoin.wav; sourceTree = "<group>"; };
 		28EB14A22A9F0E490098641E /* LogoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoView.swift; sourceTree = "<group>"; };
 		28EB14A52A9F0E790098641E /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
 		28EB14A92A9F0F2E0098641E /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
@@ -138,9 +142,9 @@
 		2813D8FC2A9EFDB00087CD1F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2813D8FB2A9EFDB00087CD1F /* Assignment2.app */,
-				2813D90B2A9EFDB20087CD1F /* Assignment2Tests.xctest */,
-				2813D9152A9EFDB20087CD1F /* Assignment2UITests.xctest */,
+				2813D8FB2A9EFDB00087CD1F /* Barcarrat.app */,
+				2813D90B2A9EFDB20087CD1F /* BarcarratTests.xctest */,
+				2813D9152A9EFDB20087CD1F /* BarcarratUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -195,6 +199,8 @@
 				28C21E442A9F2E950002034F /* highscore.mp3 */,
 				28C21E482A9F2E950002034F /* ring-up.mp3 */,
 				E879AB5F2AA31ABC0086CED5 /* winning.wav */,
+				28C8C9292AA7013500CBB25D /* loosecoin.wav */,
+				28C8C9272AA7004800CBB25D /* coinwin.wav */,
 			);
 			path = Sound;
 			sourceTree = "<group>";
@@ -243,9 +249,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2813D8FA2A9EFDB00087CD1F /* Assignment2 */ = {
+		2813D8FA2A9EFDB00087CD1F /* Barcarrat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2813D91F2A9EFDB20087CD1F /* Build configuration list for PBXNativeTarget "Assignment2" */;
+			buildConfigurationList = 2813D91F2A9EFDB20087CD1F /* Build configuration list for PBXNativeTarget "Barcarrat" */;
 			buildPhases = (
 				2813D8F72A9EFDB00087CD1F /* Sources */,
 				2813D8F82A9EFDB00087CD1F /* Frameworks */,
@@ -255,14 +261,14 @@
 			);
 			dependencies = (
 			);
-			name = Assignment2;
+			name = Barcarrat;
 			productName = Assignment2;
-			productReference = 2813D8FB2A9EFDB00087CD1F /* Assignment2.app */;
+			productReference = 2813D8FB2A9EFDB00087CD1F /* Barcarrat.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2813D90A2A9EFDB20087CD1F /* Assignment2Tests */ = {
+		2813D90A2A9EFDB20087CD1F /* BarcarratTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2813D9222A9EFDB20087CD1F /* Build configuration list for PBXNativeTarget "Assignment2Tests" */;
+			buildConfigurationList = 2813D9222A9EFDB20087CD1F /* Build configuration list for PBXNativeTarget "BarcarratTests" */;
 			buildPhases = (
 				2813D9072A9EFDB20087CD1F /* Sources */,
 				2813D9082A9EFDB20087CD1F /* Frameworks */,
@@ -273,14 +279,14 @@
 			dependencies = (
 				2813D90D2A9EFDB20087CD1F /* PBXTargetDependency */,
 			);
-			name = Assignment2Tests;
+			name = BarcarratTests;
 			productName = Assignment2Tests;
-			productReference = 2813D90B2A9EFDB20087CD1F /* Assignment2Tests.xctest */;
+			productReference = 2813D90B2A9EFDB20087CD1F /* BarcarratTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2813D9142A9EFDB20087CD1F /* Assignment2UITests */ = {
+		2813D9142A9EFDB20087CD1F /* BarcarratUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2813D9252A9EFDB20087CD1F /* Build configuration list for PBXNativeTarget "Assignment2UITests" */;
+			buildConfigurationList = 2813D9252A9EFDB20087CD1F /* Build configuration list for PBXNativeTarget "BarcarratUITests" */;
 			buildPhases = (
 				2813D9112A9EFDB20087CD1F /* Sources */,
 				2813D9122A9EFDB20087CD1F /* Frameworks */,
@@ -291,9 +297,9 @@
 			dependencies = (
 				2813D9172A9EFDB20087CD1F /* PBXTargetDependency */,
 			);
-			name = Assignment2UITests;
+			name = BarcarratUITests;
 			productName = Assignment2UITests;
-			productReference = 2813D9152A9EFDB20087CD1F /* Assignment2UITests.xctest */;
+			productReference = 2813D9152A9EFDB20087CD1F /* BarcarratUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -319,7 +325,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2813D8F62A9EFDB00087CD1F /* Build configuration list for PBXProject "Assignment2" */;
+			buildConfigurationList = 2813D8F62A9EFDB00087CD1F /* Build configuration list for PBXProject "Barcarrat" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -332,9 +338,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2813D8FA2A9EFDB00087CD1F /* Assignment2 */,
-				2813D90A2A9EFDB20087CD1F /* Assignment2Tests */,
-				2813D9142A9EFDB20087CD1F /* Assignment2UITests */,
+				2813D8FA2A9EFDB00087CD1F /* Barcarrat */,
+				2813D90A2A9EFDB20087CD1F /* BarcarratTests */,
+				2813D9142A9EFDB20087CD1F /* BarcarratUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -352,7 +358,9 @@
 				28C21E4F2A9F2E950002034F /* ring-up.mp3 in Resources */,
 				2813D9032A9EFDB20087CD1F /* Assets.xcassets in Resources */,
 				E879AB602AA31ABC0086CED5 /* winning.wav in Resources */,
+				28C8C9282AA7004800CBB25D /* coinwin.wav in Resources */,
 				28C21E4E2A9F2E950002034F /* bet-chip.mp3 in Resources */,
+				28C8C92A2AA7013500CBB25D /* loosecoin.wav in Resources */,
 				28C21E4C2A9F2E950002034F /* blink.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,12 +432,12 @@
 /* Begin PBXTargetDependency section */
 		2813D90D2A9EFDB20087CD1F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2813D8FA2A9EFDB00087CD1F /* Assignment2 */;
+			target = 2813D8FA2A9EFDB00087CD1F /* Barcarrat */;
 			targetProxy = 2813D90C2A9EFDB20087CD1F /* PBXContainerItemProxy */;
 		};
 		2813D9172A9EFDB20087CD1F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2813D8FA2A9EFDB00087CD1F /* Assignment2 */;
+			target = 2813D8FA2A9EFDB00087CD1F /* Barcarrat */;
 			targetProxy = 2813D9162A9EFDB20087CD1F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -557,7 +565,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Assignment2/Preview Content\"";
-				DEVELOPMENT_TEAM = 43ZAJ9K9TN;
+				DEVELOPMENT_TEAM = 45V96KCRVA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -570,7 +578,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rmit.edu.vn.Assignment2;
+				PRODUCT_BUNDLE_IDENTIFIER = rmit.edu.vn.Barcarrat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -586,7 +594,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Assignment2/Preview Content\"";
-				DEVELOPMENT_TEAM = 43ZAJ9K9TN;
+				DEVELOPMENT_TEAM = 45V96KCRVA;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -599,7 +607,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = rmit.edu.vn.Assignment2;
+				PRODUCT_BUNDLE_IDENTIFIER = rmit.edu.vn.Barcarrat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -622,7 +630,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Assignment2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Assignment2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Barcarrat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Barcarrat";
 			};
 			name = Debug;
 		};
@@ -641,7 +649,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Assignment2.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Assignment2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Barcarrat.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Barcarrat";
 			};
 			name = Release;
 		};
@@ -682,7 +690,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2813D8F62A9EFDB00087CD1F /* Build configuration list for PBXProject "Assignment2" */ = {
+		2813D8F62A9EFDB00087CD1F /* Build configuration list for PBXProject "Barcarrat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2813D91D2A9EFDB20087CD1F /* Debug */,
@@ -691,7 +699,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2813D91F2A9EFDB20087CD1F /* Build configuration list for PBXNativeTarget "Assignment2" */ = {
+		2813D91F2A9EFDB20087CD1F /* Build configuration list for PBXNativeTarget "Barcarrat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2813D9202A9EFDB20087CD1F /* Debug */,
@@ -700,7 +708,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2813D9222A9EFDB20087CD1F /* Build configuration list for PBXNativeTarget "Assignment2Tests" */ = {
+		2813D9222A9EFDB20087CD1F /* Build configuration list for PBXNativeTarget "BarcarratTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2813D9232A9EFDB20087CD1F /* Debug */,
@@ -709,7 +717,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2813D9252A9EFDB20087CD1F /* Build configuration list for PBXNativeTarget "Assignment2UITests" */ = {
+		2813D9252A9EFDB20087CD1F /* Build configuration list for PBXNativeTarget "BarcarratUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2813D9262A9EFDB20087CD1F /* Debug */,

@@ -39,17 +39,13 @@ struct GameView: View {
         houseDeck = houseDeck.map({_ in
             Int.random(in: 0...cards.count - 1)
         })
-        print(houseDeck)
-        print(playerDeck)
     }
     
     //MARK: CHECK WIN
     func checkWinning(){
         houseScore = (cards[houseDeck[0]].cardValue + cards[houseDeck[1]].cardValue + cards[houseDeck[2]].cardValue) % 10
-        print(houseScore)
         
         playerScore = (cards[playerDeck[0]].cardValue + cards[playerDeck[1]].cardValue + cards[playerDeck[2]].cardValue) % 10
-        print(playerScore)
         
         if (playerScore > houseScore) {
             
@@ -84,7 +80,7 @@ struct GameView: View {
             player.coins += (betAmount * 5)
         }
         
-        playSound(sound: "winning", type: "wav")
+        playSound(sound: "coinwin", type: "wav")
     }
     
 
@@ -106,6 +102,7 @@ struct GameView: View {
             player.coins -= betAmount
         }
         
+        playSound(sound: "loosecoin", type: "wav")
     }
     
     //MARK: SET NEW HIGHSCORE
@@ -230,7 +227,7 @@ struct GameView: View {
                             .onAppear {
                                 Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { _ in
                                     if self.animating {
-                                        print(self.rotation)
+                                        
                                         withAnimation(Animation.linear(duration: 0.5)) {
                                             self.rotation += 180
                                         }
@@ -263,7 +260,7 @@ struct GameView: View {
                             .onAppear {
                                 Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { _ in
                                     if self.animating {
-                                        print(self.rotation)
+                                        
                                         withAnimation(Animation.linear(duration: 0.5)) {
                                             self.rotation += 180
                                             self.isCardFlip.toggle()
@@ -308,7 +305,6 @@ struct GameView: View {
                             .onAppear {
                                 Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { _ in
                                     if self.animating {
-                                        print(self.rotation)
                                         withAnimation(Animation.linear(duration: 0.5)) {
                                             self.rotation += 180
                                             self.isCardFlip.toggle()
@@ -341,7 +337,6 @@ struct GameView: View {
                             .onAppear {
                                 Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { _ in
                                     if self.animating {
-                                        print(self.rotation)
                                         withAnimation(Animation.linear(duration: 0.5)) {
                                             self.rotation += 180
                                             self.isCardFlip.toggle()
@@ -375,7 +370,6 @@ struct GameView: View {
                             .onAppear {
                                 Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { _ in
                                     if self.animating {
-                                        print(self.rotation)
                                         withAnimation(Animation.linear(duration: 0.5)) {
                                             self.rotation += 180
                                             self.isCardFlip.toggle()

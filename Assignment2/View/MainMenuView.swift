@@ -135,17 +135,15 @@ struct MainMenuView: View {
                     Spacer()
                     
                 }.onAppear(perform: {
-                    print("APPEAR")
                     login()
                     playSound(sound: "drum-music", type: "mp3")
                 })
+                
             }
         }.preferredColorScheme(isDarkMode ? .dark : .light)
-        
         .onDisappear(perform: {
             audioPlayer?.stop()
         })
-        
     }
 }
 
