@@ -15,12 +15,12 @@ import Foundation
 import SwiftUI
 
 var achievements = [
-    "2500highScore": Achievement(id: UUID(), name: "Earn 2500 high score", color: "Bronze", imageName: "dollarsign.circle"),
-    "3500highScore": Achievement(id: UUID(), name: "Earn 3500 high score", color: "Silver", imageName: "dollarsign.circle"),
-    "5000highScore": Achievement(id: UUID(), name: "Earn 5000 high score", color: "Yellow", imageName: "dollarsign.circle"),
-    "5games" : Achievement(id: UUID(), name: "Play 5 games", color: "Bronze", imageName: "5.circle"),
-    "10games" : Achievement(id: UUID(), name: "Play 10 games", color: "Silver", imageName: "10.circle"),
-    "20games" : Achievement(id: UUID(), name: "Play 20 games", color: "Yellow", imageName: "20.circle"),
+    "5000highScore": Achievement(id: UUID(), name: "Earn 5000 high score", color: "Bronze", imageName: "dollarsign.circle"),
+    "7500highScore": Achievement(id: UUID(), name: "Earn 7500 high score", color: "Silver", imageName: "dollarsign.circle"),
+    "10000highScore": Achievement(id: UUID(), name: "Earn 10000 high score", color: "Yellow", imageName: "dollarsign.circle"),
+    "10games" : Achievement(id: UUID(), name: "Play 5 games", color: "Bronze", imageName: "10.circle"),
+    "20games" : Achievement(id: UUID(), name: "Play 10 games", color: "Silver", imageName: "20.circle"),
+    "30games" : Achievement(id: UUID(), name: "Play 20 games", color: "Yellow", imageName: "30.circle"),
    
 ]
 

@@ -24,23 +24,20 @@ struct LeaderboardDetail: View {
     
     //MARK: CHECK ACHIEVEMENT
     func checkAchievement(){
-        if (player.highScore >= 2500)
-        {
-            playerAchievement.append(achievements["2500highScore"]!)
-            
-        }
-        if (player.highScore >= 3500)
-        {
-            playerAchievement.append(achievements["3500highScore"]!)
-            
-        }
         if (player.highScore >= 5000)
         {
             playerAchievement.append(achievements["5000highScore"]!)
             
         }
-        if (player.history.count >= 5) {
-            playerAchievement.append(achievements["5games"]!)
+        if (player.highScore >= 7500)
+        {
+            playerAchievement.append(achievements["7500highScore"]!)
+            
+        }
+        if (player.highScore >= 10000)
+        {
+            playerAchievement.append(achievements["10000highScore"]!)
+            
         }
         if (player.history.count >= 10) {
             playerAchievement.append(achievements["10games"]!)
@@ -48,8 +45,11 @@ struct LeaderboardDetail: View {
         if (player.history.count >= 20) {
             playerAchievement.append(achievements["20games"]!)
         }
+        if (player.history.count >= 30) {
+            playerAchievement.append(achievements["30games"]!)
+        }
         
-        print(playerAchievement)
+        
     }
     
     //MARK: DESIGN INFO PLAYER
